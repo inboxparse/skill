@@ -34,8 +34,9 @@ npx skills add inboxparse/skill
 
 ## Links
 
-- [InboxParse Dashboard](https://inboxparse.com/console)
-- [API Documentation](https://inboxparse.com/docs)
+- [InboxParse](https://inboxparse.com)
+- [Console](https://inboxparse.com/console)
+- [Documentation](https://inboxparse.com/docs)
 - [MCP Server](https://inboxparse.com/api/mcp)
 - [GitHub](https://github.com/inboxparse/skill)
-- [skills.sh](https://skills.sh/)
+- [skills.sh](https://skills.sh/inboxparse/skill/inboxparse)
