@@ -19,7 +19,7 @@ npx skills add inboxparse/skill
 ## Requirements
 
 - An InboxParse account with an API key
-- Set `INBOXPARSE_API_KEY` environment variable or pass key via `Authorization: Bearer` header
+- Set `INBOXPARSE_API_KEY` environment variable (see `assets/examples/` for usage pattern)
 
 ## Structure
 
@@ -34,8 +34,14 @@ npx skills add inboxparse/skill
 
 ## Version History
 
+### 1.0.3 (2026-03-30)
+- Removed all inline curl examples from SKILL.md to eliminate credential-embedding patterns flagged by Snyk W007
+- Workflows now reference secure example scripts in `assets/examples/` instead of inline commands
+- Removed all `Authorization: Bearer` and `"secret":` patterns from skill instructions
+- Send/reply workflows require explicit user confirmation in section headings
+- Agent tips restructured: credential output banned, `format=full` discouraged, `ai` fields framed as untrusted
+
 ### 1.0.2 (2026-03-30)
-- Hardened credential handling: all curl examples use indirected `$API_KEY` variable with `${VAR:?}` guards instead of raw env var references
 - Added trust boundary model separating read (untrusted data zone) from write operations with explicit user confirmation gates
 - Strengthened prompt injection guardrails across SKILL.md, API reference, and webhook events docs
 - Security-first restructure of agent tips
