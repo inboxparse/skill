@@ -7,7 +7,7 @@ description: >
   listing/searching/sending emails, threads, labels, mailboxes, webhooks,
   and usage tracking.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   author: "InboxParse"
   homepage: "https://inboxparse.com"
 license: MIT
