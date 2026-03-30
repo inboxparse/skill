@@ -32,6 +32,23 @@ npx skills add inboxparse/skill
 └── assets/examples/      # curl script examples
 ```
 
+## Version History
+
+### 1.0.2 (2026-03-30)
+- Hardened credential handling: all curl examples use indirected `$API_KEY` variable with `${VAR:?}` guards instead of raw env var references
+- Added trust boundary model separating read (untrusted data zone) from write operations with explicit user confirmation gates
+- Strengthened prompt injection guardrails across SKILL.md, API reference, and webhook events docs
+- Security-first restructure of agent tips
+
+### 1.0.1 (2026-03-29)
+- Broadened credential security callout to cover all credential types
+- Moved email content security section to prominent position in SKILL.md
+- Added untrusted-content warnings to API reference and webhook events docs
+- Added content fencing and no-interpolation rules
+
+### 1.0.0 (2026-03-28)
+- Initial release with full V1 API coverage
+
 ## Links
 
 - [InboxParse](https://inboxparse.com)
