@@ -34,6 +34,10 @@ npx skills add inboxparse/skill
 
 ## Version History
 
+### 1.0.4 (2026-03-31)
+- Replaced JSON code blocks containing credential fields in API reference with parameter tables to resolve remaining Snyk W007 patterns
+- POST /mailboxes and POST /webhooks body schemas now use tables consistent with GET endpoint docs
+
 ### 1.0.3 (2026-03-30)
 - Removed all inline curl examples from SKILL.md to eliminate credential-embedding patterns flagged by Snyk W007
 - Workflows now reference secure example scripts in `assets/examples/` instead of inline commands
