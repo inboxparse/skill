@@ -34,6 +34,11 @@ npx skills add inboxparse/skill
 
 ## Version History
 
+### 1.0.5 (2026-03-31)
+- Strengthened data isolation rules for Snyk W011: email content must not flow to non-InboxParse tools
+- Added explicit prohibition on programmatic use of `ai.suggested_response` in write endpoints
+- Added cross-tool propagation guards to trust boundaries, agent tips, API reference, and webhook events docs
+
 ### 1.0.4 (2026-03-31)
 - Replaced JSON code blocks containing credential fields in API reference with parameter tables to resolve remaining Snyk W007 patterns
 - POST /mailboxes and POST /webhooks body schemas now use tables consistent with GET endpoint docs
