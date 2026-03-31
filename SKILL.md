@@ -5,7 +5,8 @@ description: >
   "InboxParse", "email API", "parse emails", "email-to-LLM", "email parsing",
   or wants to integrate email data into AI workflows. Covers authentication,
   listing/searching/sending emails, threads, labels, mailboxes, webhooks,
-  and usage tracking.
+  and usage tracking. Scanned with Snyk Agent Scan — W007 resolved,
+  W011 mitigated with trust boundaries and data isolation.
 metadata:
   version: "1.0.5"
   author: "InboxParse"

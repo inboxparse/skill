@@ -21,6 +21,13 @@ npx skills add inboxparse/skill
 - An InboxParse account with an API key
 - Set `INBOXPARSE_API_KEY` environment variable (see `assets/examples/` for usage pattern)
 
+## Security
+
+Scanned with [Snyk Agent Scan](https://github.com/snyk/agent-scan). Current status:
+
+- **W007** (Insecure credential handling): Resolved in v1.0.4. All credentials use environment variable indirection; no secrets in code blocks or curl examples.
+- **W011** (Third-party content exposure): Mitigated (risk 0.80). Inherent to any skill that reads untrusted email content. Mitigations include trust boundaries, user confirmation gates, cross-tool data isolation, and fenced display of untrusted fields.
+
 ## Structure
 
 ```
